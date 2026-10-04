@@ -27,7 +27,7 @@
 
 - `chmod o+r file` - Дать остальным право на чтение  
 
-# SUID, SGID, Stiky bit
+# 2. SUID, SGID, Stiky bit
 ```
 SUID	   s→ u+s
 SGID	   s→ g+s
@@ -79,8 +79,18 @@ SGID на каталоге: новые файлы и каталоги созда
 - `chmod 1775 folder` - добавить специальный бит  
 - `chmod 0775 folder` - убрать t-bit
 
+# 3. ACL - Access Control List  
 
+ACL позволяет дать права конкретному пользователю не меняя owner/group  
 
+- `getfacl file`			  - показать ACL файла  
+- `setfacl -m u:user:rw file` - добавить или изменить ACL для пльзователя  
+- `setfacl -x u:user file`    -	удалить ACL для пользователя  
+- `setfacl -b file`			  - удалить все ACL из файла  
+- `setfacl -m g:group:rw file - разрешить группе запись и чтение  
+
+- `mount | grep acl`		  - чтобы ACL работали, файловая система должна быть смонтирована с поддержкой ACL.  
+Этой командой можно проверить и если будет вывод похожий на это значит ACL включены: /dev/sda1 on / type ext4 (rw,relatime,acl)  
 
 
 

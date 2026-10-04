@@ -59,9 +59,9 @@ SUID имеет смысл именно для исполняемых файло
 Для исполняемого файла: запускается с группой владельца файла  
 Для каталога:			новые файлы и каталоги внутри него наследуют группу родительского каталога.  
 ```
-- `chmod g+s`   file||folder
-- `chmod 2775`  file||folder
-- `chmod 0775`  file||folder
+- chmod g+s   file||folder
+- chmod 2775  file||folder
+- chmod 0775  file||folder
 ```
 ```
 chmod g+s /shared
@@ -84,14 +84,14 @@ SGID на каталоге: новые файлы и каталоги созда
 
 ACL позволяет дать права конкретному пользователю не меняя owner/group  
 ```
-- `getfacl file`			  - показать ACL файла  
-- `setfacl -m u:user:rw file` - добавить или изменить ACL для пльзователя  
-- `setfacl -x u:user file`    -	удалить ACL для пользователя  
-- `setfacl -b file`			  - удалить все ACL из файла  
-- `setfacl -m g:group:rw file - разрешить группе запись и чтение  
+- getfacl file			     - показать ACL файла  
+- setfacl -m u:user:rw file  - добавить или изменить ACL для пльзователя  
+- setfacl -x u:user file     -	удалить ACL для пользователя  
+- setfacl -b file			 - удалить все ACL из файла  
+- setfacl -m g:group:rw file - разрешить группе запись и чтение  
 ```
 ```
-- `mount | grep acl`		  - чтобы ACL работали, файловая система должна быть смонтирована с поддержкой ACL.  
+- mount | grep acl		     - чтобы ACL работали, файловая система должна быть смонтирована с поддержкой ACL.  
 ```
 Этой командой (mount) можно проверить и если будет вывод похожий на это значит ACL включены: /dev/sda1 on / type ext4 (rw,relatime,acl)  
 

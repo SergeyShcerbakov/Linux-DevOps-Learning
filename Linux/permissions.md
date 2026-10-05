@@ -162,6 +162,16 @@ sudo chown :developers file.txt		   - сменить только группу
 sudo chown -R user1:developers folder/ - Рекурсивно для каталога и всего содержимого
 ```
 
+# chgrp — change group
+
+chgrp (change group)- команда для изменения группы-владельца файла или каталога.  
+```
+chgrp developers file			- меняет группу файла, но не его пользователя-владельца.
+chgrp -R developers project/	- для каталога со всем содержимым -R — рекурсивно
+```
+Аналог через chown:  
+chown :developers file  
+
 
 
 

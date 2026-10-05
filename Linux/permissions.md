@@ -92,14 +92,17 @@ SGID на каталоге: новые файлы и каталоги созда
 
 # 3. ACL - Access Control List (расширенные списки прав доступа)
 <details>
-ACL позволяет дать права конкретному пользователю не меняя owner/group  
+
+### ACL позволяет дать права конкретному пользователю не меняя owner/group  
+
 ```
 - getfacl file			     - показать ACL файла  
 - setfacl -m u:user:rw file  - добавить или изменить ACL для пльзователя  
-- setfacl -x u:user file     -	удалить ACL для пользователя  
+- setfacl -x u:user file     - удалить ACL для пользователя  
 - setfacl -b file			 - удалить все ACL из файла  
 - setfacl -m g:group:rw file - разрешить группе запись и чтение  
 ```
+
 ```
 - mount | grep acl		     - чтобы ACL работали, файловая система должна быть смонтирована 
 							   с поддержкой ACL.  

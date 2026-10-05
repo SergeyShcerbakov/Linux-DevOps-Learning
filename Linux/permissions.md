@@ -31,6 +31,7 @@
 
 # 2. SUID, SGID, Stiky bit
 <details>
+
 ```
 SUID	   s→ u+s
 SGID	   s→ g+s
@@ -66,6 +67,7 @@ SUID имеет смысл именно для исполняемых файло
 - chmod 2775  file||folder
 - chmod 0775  file||folder
 ```
+
 ```
 chmod g+s /shared
 и у shared группа:
@@ -82,6 +84,7 @@ SGID на каталоге: новые файлы и каталоги созда
 
 - `chmod 1775 folder` - добавить специальный бит  
 - `chmod 0775 folder` - убрать t-bit
+
 </details>
 
 # 3. ACL - Access Control List (расширенные списки прав доступа)

@@ -15,6 +15,7 @@
 ```
 
 # 1. chmod		
+<details>
 		rwx
 		421
 ##Установка прав в числовом формате:  
@@ -26,8 +27,10 @@
 - `chmod g-w file` - Убарть у группы право на запись  
 
 - `chmod o+r file` - Дать остальным право на чтение  
+</details>
 
 # 2. SUID, SGID, Stiky bit
+<details>
 ```
 SUID	   s→ u+s
 SGID	   s→ g+s
@@ -79,9 +82,10 @@ SGID на каталоге: новые файлы и каталоги созда
 
 - `chmod 1775 folder` - добавить специальный бит  
 - `chmod 0775 folder` - убрать t-bit
+</details>
 
 # 3. ACL - Access Control List (расширенные списки прав доступа)
-
+<details>
 ACL позволяет дать права конкретному пользователю не меняя owner/group  
 ```
 - getfacl file			     - показать ACL файла  
@@ -95,9 +99,10 @@ ACL позволяет дать права конкретному пользов
 							   с поддержкой ACL.  
 ```
 Этой командой (mount) можно проверить и если будет вывод похожий на это значит ACL включены: /dev/sda1 on / type ext4 (rw,relatime,acl)  
+</details>
 
 # File attributes lsatt, chattr
-
+<details>
 Если есть атрибут файла, то даже root не может изменять и записывать.  
 Только root может снять защиту и изменить.  
 
@@ -122,8 +127,10 @@ ACL позволяет дать права конкретному пользов
 - T - top of directory hierarchy	- для оптимизации размещения каталогов
 - D - synchronous directory updates - изменения каталога записываются синхронно
 ```
-# umask
+</details>
 
+# umask
+<details>
 !!! Но umask:  не даёт права,  а УБИРАЕТ их.  
 ```
 Для  файлов    → 666  
@@ -151,8 +158,10 @@ ACL позволяет дать права конкретному пользов
 														others
 														6 - 1 = 5 (r-x)
 ```
-# chown - смена владельца и группы
+</details>
 
+# chown - смена владельца и группы
+<details>
 chown (change owner) изменяет владельца файла/каталога и при необходимости его группу.  
 Выполняется команда только с sudo.
 ```
@@ -161,9 +170,10 @@ sudo chown user1:developers file.txt   - сменить владельца и г
 sudo chown :developers file.txt		   - сменить только группу
 sudo chown -R user1:developers folder/ - Рекурсивно для каталога и всего содержимого
 ```
+</details>
 
 # chgrp — change group
-
+<details>
 chgrp (change group)- команда для изменения группы-владельца файла или каталога.  
 ```
 chgrp developers file			- меняет группу файла, но не его пользователя-владельца.
@@ -171,7 +181,7 @@ chgrp -R developers project/	- для каталога со всем содер�
 ```
 Аналог через chown:  
 chown :developers file  
-
+</details>
 
 
 

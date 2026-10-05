@@ -23,7 +23,7 @@ I use it to organize my knowledge, explore new technologies, and apply theory in
 
 - Technologies	 — notes and examples covering various development tools and technologies.
 ```
-🎯 Goal
+🎯 Goal  
 ▶ The goal of this repository is to keep my knowledge and practice in one place, continuously improve my technical skills, and maintain a convenient reference for reviewing what I have learned.  
 To develop practical software development skills, organize technical knowledge, and keep my work and learning progress in one place.  
 

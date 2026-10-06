@@ -67,7 +67,7 @@ awk -F: '$3 >= 1000 {print $1, $3, $6}' /etc/passwd - Можно посмотр�
 groups user - посмотреть группы пользователя  
 id user		- посмотреть группы пользователя + числовой индефикатор  
 
-# user and groups
+# 5. User and groups
 
 <details>
 

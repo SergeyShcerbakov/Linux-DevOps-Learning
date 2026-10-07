@@ -173,11 +173,15 @@ jobs - Посмотреть фоновые задачи текущего shell:
 
 # 10. fg и bg
 <details>
+
+```
 fd %1 - вернуть в foreground  
 %1    — номер job.  
 
 bg %1 - продолжить в background  
 bg возобновляет остановленную job в фон  
+```
+
 </details>
 
 

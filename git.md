@@ -22,6 +22,7 @@ git config --list
 ```
 
 </details>
+
 ## 3. Создание репозитория
 <details>
 
@@ -32,6 +33,7 @@ git status               # проверить состояние файлов
 ```
 
 </details>
+
 ## 4. Основной рабочий цикл
 <details>
 
@@ -48,6 +50,7 @@ git log --oneline                # краткая история коммито�
 
 **Важно:** `git add` подготавливает изменения, `git commit` сохраняет их в истории, `git push` отправляет коммиты на сервер.
 </details>
+
 ## 5. Отправка на GitHub и GitLab
 <details>
 
@@ -75,6 +78,7 @@ git remote set-url origin URL
 ```
 
 </details>
+
 ## 6. Ветки (Branches)
 <details>
 
@@ -88,6 +92,7 @@ git branch -d feature            # удалить локальную ветку
 ```
 
 </details>
+
 ## 7. Отмена изменений
 <details>
 
@@ -100,6 +105,7 @@ git revert COMMIT_ID             # создать коммит, отменяющ
 
 **Осторожно:** `git restore file.md` удаляет незакоммиченные изменения в этом файле. `git revert` обычно безопаснее для отмены уже опубликованных коммитов.
 </details>
+
 ## 8. `.gitignore`
 <details>
 Файл `.gitignore` указывает Git, какие ещё не отслеживаемые файлы игнорировать.
@@ -123,6 +129,7 @@ git check-ignore -v Drafts/notes.md
 `.gitignore` не перестаёт отслеживать файлы, которые уже были добавлены в репозиторий.
 
 </details>
+
 ## 9. Полезные команды
 <details>
 
@@ -135,6 +142,7 @@ git rm --cached file.md          # убрать файл из Git, остави�
 ```
 
 <details>
+
 ## 10. Типичный рабочий процесс
 <details>
 
@@ -150,6 +158,7 @@ git push gitlab main
 Добавляй только нужные файлы через `git add`, чтобы случайно не включить черновики в коммит.
 
 </details>
+
 ## Запомнить
 <details>
 
@@ -163,3 +172,34 @@ git push gitlab main
 
 </details>
 
+### Самый простой способ — выборочно добавлять файлы
+<details>
+
+```
+Linux-DevOps-Learning/
+├── Linux/
+│   ├── permissions.md
+│   └── monitoring.md
+├── DevOps/
+└── Drafts/
+    └── notes.md
+```
+
+Отправить только Linux/permissions.md, а Drafts/ пока оставить локально.
+```
+git add Linux/permissions.md
+git commit -m "Add Linux permissions notes"
+git push origin main
+```
+```
+Можно добавить сразу несколько конкретных файлов:
+git add Linux/permissions.md Linux/monitoring.md
+
+Все файлы из одной папки:
+git add Linux/
+
+git diff --cached --name-only        - Посмотреть, что ты добавил в индекс
+git restore --staged Drafts/notes.md - Отменить добавление конкретного файла из индекса, не удаляя его с компьютера
+```
+
+</details>

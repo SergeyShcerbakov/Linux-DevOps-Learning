@@ -14,13 +14,16 @@
 
 ## 2. Первоначальная настройка
 <details>
+
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 git config --list
 ```
+
 </details>
 ## 3. Создание репозитория
+<details>
 
 ```bash
 git init                 # создать локальный репозиторий
@@ -28,7 +31,9 @@ git clone URL            # клонировать репозиторий
 git status               # проверить состояние файлов
 ```
 
+</details>
 ## 4. Основной рабочий цикл
+<details>
 
 ```bash
 git status                       # проверить изменения
@@ -42,8 +47,9 @@ git log --oneline                # краткая история коммито�
 ```
 
 **Важно:** `git add` подготавливает изменения, `git commit` сохраняет их в истории, `git push` отправляет коммиты на сервер.
-
+</details>
 ## 5. Отправка на GitHub и GitLab
+<details>
 
 ```bash
 git remote -v                    # показать удалённые репозитории
@@ -68,7 +74,9 @@ git remote add gitlab URL
 git remote set-url origin URL
 ```
 
+</details>
 ## 6. Ветки (Branches)
+<details>
 
 ```bash
 git branch                       # показать локальные ветки
@@ -79,7 +87,9 @@ git merge feature                # объединить ветку с текущ
 git branch -d feature            # удалить локальную ветку
 ```
 
+</details>
 ## 7. Отмена изменений
+<details>
 
 ```bash
 git restore file.md              # отменить изменения в файле
@@ -89,9 +99,9 @@ git revert COMMIT_ID             # создать коммит, отменяющ
 ```
 
 **Осторожно:** `git restore file.md` удаляет незакоммиченные изменения в этом файле. `git revert` обычно безопаснее для отмены уже опубликованных коммитов.
-
+</details>
 ## 8. `.gitignore`
-
+<details>
 Файл `.gitignore` указывает Git, какие ещё не отслеживаемые файлы игнорировать.
 
 Пример:
@@ -112,7 +122,9 @@ git check-ignore -v Drafts/notes.md
 
 `.gitignore` не перестаёт отслеживать файлы, которые уже были добавлены в репозиторий.
 
+</details>
 ## 9. Полезные команды
+<details>
 
 ```bash
 git show                         # показать последний коммит
@@ -122,7 +134,9 @@ git remote show origin           # информация об удалённом 
 git rm --cached file.md          # убрать файл из Git, оставив на диске
 ```
 
+<details>
 ## 10. Типичный рабочий процесс
+<details>
 
 ```bash
 git status
@@ -135,7 +149,9 @@ git push gitlab main
 
 Добавляй только нужные файлы через `git add`, чтобы случайно не включить черновики в коммит.
 
+</details>
 ## Запомнить
+<details>
 
 * `git add` — подготовить изменения.
 * `git commit` — сохранить изменения в истории.
@@ -144,4 +160,6 @@ git push gitlab main
 * `git pull` — получить и интегрировать изменения.
 * `git status` — проверить состояние.
 * `git log` — посмотреть историю.
+
+</details>
 

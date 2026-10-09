@@ -141,7 +141,7 @@ git remote show origin           # информация об удалённом 
 git rm --cached file.md          # убрать файл из Git, оставив на диске
 ```
 
-<details>
+</details>
 
 ## 10. Типичный рабочий процесс
 <details>

@@ -82,6 +82,7 @@ docker ps -a               # Показать все контейнеры
 
 # 5. Docker Engine, Docker CLI, Docker Daemon
 <details>
+
 Как работает: Client отправляет запрос → Daemon обрабатывает его → создаёт или управляет контейнером.  
 
 **CLI** (Command Line Interface)  

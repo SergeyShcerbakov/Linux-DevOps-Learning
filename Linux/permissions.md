@@ -31,6 +31,9 @@
 - `chmod g-w file` - Убарть у группы право на запись  
 
 - `chmod o+r file` - Дать остальным право на чтение  
+
+- `chmod u=rw,g=r,o= file`
+
 </details>
 
 # 2. SUID, SGID, Stiky bit

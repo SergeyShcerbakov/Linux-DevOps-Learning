@@ -102,3 +102,63 @@ Docker Engine       — это сервис (демон), который: при
 Docker Engine -Это «движок», который запускает контейнеры
 
 </details>
+
+# Реестр образов 
+<details>
+
+**Docker Hub** - это «онлайн библиотека образов»  
+Там есть: nginx, mysql, ubuntu, тысячи других.
+
+**Реестр образов** — это хранилище (сервер), где лежат Docker-образы  
+```
+Аналогии:
+как GitHub       → для кода 
+как Google Drive → для файлов 
+как npm          → для пакетов 
+Docker Registry  → для образов
+```
+
+</details>
+
+# Контейнер vs Виртуальная машина 
+<details>
+
+```
+                          `Контейнер | Виртуальная машина`
+Запуск                       Быстрый | медленный
+Вес                           Лёгкий | тяжёлый
+ОС                    общая с хостом | своя
+Изоляция                     средняя |сильная
+                 контейнер использует ядро хостовой ОС 
+                        VM использует гипервизор
+```
+
+</details>
+
+# Установка и проверка Docker
+<details>
+
+**Ubuntu/Debian:**  
+```
+sudo apt update  
+sudo apt install docker.io  
+```
+
+**Проверка установки и работы:**
+```
+docker --version              # Версия Docker CLI
+sudo systemctl status docker  # Состояние службы
+sudo docker info              # Информация о Docker Engine
+sudo docker run hello-world   # Тестовый запуск контейнера
+```
+
+**Управление службой:**
+```
+sudo systemctl start docker   # Запустить
+sudo systemctl enable docker  # Автозапуск при загрузке
+sudo systemctl restart docker # Перезапустить
+```
+**Важно:** пакет docker.io — вариант для Ubuntu/Debian. Установка из официального репозитория Docker может отличаться
+
+</details>
+

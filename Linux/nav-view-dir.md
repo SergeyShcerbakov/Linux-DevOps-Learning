@@ -99,10 +99,59 @@ cd foleder/my-directoty - перейти в конкретную директо�
 
 </details>
 
-# mkdir
+# 6. mkdir
 
-Создание каталога 'личный' с ограниченными полномочиями:
-mkdir -m 700 ~/project/digital_garden/privat 
+<details>
 
-Чтобы проверить полномочия, воспользуйтесь:
-ls -ld ~/project/digital_garden/private
+Создание каталога 'личный' с ограниченными полномочиями:  
+`mkdir -m 700 ~/project/digital_garden/privat `  
+
+Чтобы проверить полномочия, воспользуйтесь:  
+`ls -ld ~/project/digital_garden/private `  
+
+Создадние нескольких каталогов в подробном режиме:  
+```
+mkdir -v ~/project/digital_garden/resources/books ~/project/digital_garden/resources/articles ~/project/digital_garden/resources/videos  
+
+Параметр -v обозначает «разговорный». Он указывает mkdir распечатать сообщение для каждой созданной папки.
+```
+
+Создать вложенную структуру для гипотетического исследовательского проекта с ограниченными полномочиями:  
+```
+mkdir -pvm 750 ~/project/digital_garden/projects/research_paper/drafts ~/project/digital_garden/projects/research_paper/references
+
+-p:     Создание родительских каталогов по мере необходимости
+-v:     Подробный режим, печать сообщение для каждой созданной каталога
+-m 750: Установить полномочия
+```
+
+Посмотреть дерево:  
+`free ~/project/digital_garden`
+Посмотреть дерево с правами:  
+`tree -p ~/project/digital_garden`
+
+Дополнительные параметры mkdir:
+
+```
+-Z: Установить стандартный тип контекста безопасности SELinux для каждой созданной каталога
+--context[=CTX]: Как -Z, или если указан CTX, установите для контекста безопасности SELinux или SMACK CTX
+--version: Выходные сведения и выход
+```
+
+Brace Expansion (раскрытие фигурных скобок) в Bash — создание множества имён файлов и каталогов с помощью шаблонов в фигурных скобках  
+
+```
+-p вынужнает mkdir создавать родителоьские каталоги 
+C указанием пути
+
+mkdir {2010..2012}-0{1..9} {2010..2012}-{10..12}
+mkdir -p playground/dir-{00{1..9},0{10..99},100}
+touch playground/dir-{00{1..9},0{10..99},100}/file-{A..Z}
+```
+-p создаёт промежуточные каталоги автоматически:  
+`mkdir -p a/b c/d`
+
+Сразу две команды испльзовать разные:  
+`mkdir dir1 && touch dir1/file.txt`
+
+</details>

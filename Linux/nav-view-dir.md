@@ -104,21 +104,21 @@ cd foleder/my-directoty - перейти в конкретную директо�
 <details>
 
 Создание каталога 'личный' с ограниченными полномочиями:  
-`mkdir -m 700 ~/project/digital_garden/privat `  
+`mkdir -m 700 ~/project/digital/privat `  
 
 Чтобы проверить полномочия, воспользуйтесь:  
-`ls -ld ~/project/digital_garden/private `  
+`ls -ld ~/project/digital/private `  
 
 Создадние нескольких каталогов в подробном режиме:  
 ```
-mkdir -v ~/project/digital_garden/resources/books ~/project/digital_garden/resources/articles ~/project/digital_garden/resources/videos  
+mkdir -v ~/project/digital/resources/book ~/project/digital/resources/articles ~/project/digital/resources/videos  
 
 Параметр -v обозначает «разговорный». Он указывает mkdir распечатать сообщение для каждой созданной папки.
 ```
 
 Создать вложенную структуру для гипотетического исследовательского проекта с ограниченными полномочиями:  
 ```
-mkdir -pvm 750 ~/project/digital_garden/projects/research_paper/drafts ~/project/digital_garden/projects/research_paper/references
+mkdir -pvm 750 ~/project/digital/projects/research/drafts ~/project/digital/projects/research/references
 
 -p:     Создание родительских каталогов по мере необходимости
 -v:     Подробный режим, печать сообщение для каждой созданной каталога

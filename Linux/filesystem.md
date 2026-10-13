@@ -1,8 +1,10 @@
 # Linux Filesystem
 
 ##Contents:  
+```
 /, /etc, /var, /home, /tmp, /usr, /opt, /dev, /proc, /sys,  
    /boot, /root, /run, /mnt, /media, /srv, /lib, /bin/,/sbin  
+```
 
 ```
 / - корень

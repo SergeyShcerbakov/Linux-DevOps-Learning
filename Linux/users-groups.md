@@ -1,10 +1,12 @@
 # Users & Groups
 ##Contents:
+```
 1. Где Linux хранит информацию о пользователях
 2. UID и GID
 3. Information about users
 4. Groups informations
 5. Users & groups
+```
 
 # 1. Где Linux хранит информацию о пользователях
 <details>

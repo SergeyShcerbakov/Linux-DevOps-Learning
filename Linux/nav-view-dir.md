@@ -6,6 +6,7 @@
 4. pwd   - Print Working Directory (вывести текущий рабочий каталог)
 5. cd    - Change Directory        (сменить каталог)
 6. mkdir - Make Directory          (создать каталог)
+7. mkdir - **Brace Expansion**     (раскрытие фигурных скобок)
 ```
 
 
@@ -137,6 +138,12 @@ mkdir -pvm 750 ~/project/digital/projects/research/drafts ~/project/digital/proj
 --context[=CTX]: Как -Z, или если указан CTX, установите для контекста безопасности SELinux или SMACK CTX
 --version: Выходные сведения и выход
 ```
+
+</details>
+
+# 7. mkdrir - Brace Expansion (раскрытие фигурные скобок)
+
+<details>
 
 **Brace Expansion** (раскрытие фигурных скобок) в Bash — создание множества имён файлов и каталогов с помощью шаблонов в фигурных скобках:  
 

@@ -1,27 +1,28 @@
 # AWS Fundamentals
+```
+1. What is AWS?                  
+2. Cloud Computing               7. AWS Account and Billing
+3. IaaS / PaaS / SaaS            8. Basic AWS Workflow
+4. Cloud Deployment Models       9. Key Terms/ключевые термины
+5. Main AWS Services             10. Interview Questions
+6. Shared Responsibility Model   11. Summary
+```
 
-1. What is AWS?
-2. Cloud Computing
-3. IaaS / PaaS / SaaS
-4. Cloud Deployment Models
-5. Main AWS Services
-6. Shared Responsibility Model
-7. AWS Account and Billing
-8. Basic AWS Workflow
-9. Key Terms/ключевые термины
 
 ## 1. What is AWS?
 
 **AWS (Amazon Web Services)** — облачная платформа Amazon, предоставляющая вычислительные ресурсы, хранилища, базы данных, сети и другие IT-сервисы через интернет.
 
+<details>
 Вместо покупки и обслуживания собственных серверов можно арендовать ресурсы AWS и управлять ими по мере необходимости.
 
 **Пример:**
 - Раньше: купить физический сервер, установить ОС, настроить сеть и обслуживать оборудование.
 - С AWS: создать виртуальный сервер EC2 через консоль или AWS CLI и оплачивать используемые ресурсы.
+</details>
 
 ## 2. What is Cloud Computing?
-
+<details>
 **Cloud Computing (облачные вычисления)** — предоставление вычислительных ресурсов и IT-сервисов по требованию через сеть.
 
 Основные преимущества:  
@@ -33,7 +34,7 @@
 - **Global Reach:** развёртывать приложения в разных регионах мира.  
 
 Важно: облако не означает, что физических серверов нет. Серверы существуют в дата-центрах поставщика, например Amazon.
-
+</details>
 ## 3. Cloud Service Models (IaaS, PaaS,SaaS)
 <details>
 
@@ -178,8 +179,9 @@ AWS отвечает за безопасность самой облачной �
 9. What is IAM and why is it important?  
 10. How can you monitor AWS resources and control costs?  
 </details>
-## Summary
 
+## Summary
+<details>
 AWS — облачная платформа, предоставляющая вычислительные, сетевые, storage- и другие сервисы.
 
 Главные понятия для начала обучения:  
@@ -190,4 +192,4 @@ AWS — облачная платформа, предоставляющая вы
 - IAM  
 - Основные сервисы AWS  
 - Billing and Cost Management  
-
+</details>

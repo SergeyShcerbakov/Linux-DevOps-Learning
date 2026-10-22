@@ -171,30 +171,36 @@ Multi-Region обычно сложнее и дороже, чем Multi-AZ. Не�
 ## 8. Important Concepts
 
 <details>
+
 - **Latency:** время задержки при передаче данных.  
 - **High Availability (HA):** обеспечение доступности сервиса.  
 - **Fault Tolerance:** способность продолжать работу при определённых отказах.  
 - **Disaster Recovery (DR):** восстановление системы после серьёзного сбоя.  
 - **CDN:** сеть распределённых точек доставки контента.  
 - **Caching:** временное хранение данных для ускорения повторных запросов.  
+
 </details>
 
 ## 9. Interview Questions
 <details>
-1. What is an AWS Region?
-2. What is an Availability Zone?
-3. What is the difference between a Region and an AZ?
-4. What is an Edge Location?
-5. How does CloudFront use Edge Locations?
-6. Why deploy an application across multiple AZs?
-7. What is the difference between Multi-AZ and Multi-Region?
-8. Does deploying two EC2 instances in different AZs automatically guarantee high availability?
-9. What factors should you consider when choosing an AWS Region?
-10. Why can Multi-Region architecture be more expensive and complex?
+
+1. What is an AWS Region?  
+2. What is an Availability Zone?  
+3. What is the difference between a Region and an AZ?  
+4. What is an Edge Location?  
+5. How does CloudFront use Edge Locations?  
+6. Why deploy an application across multiple AZs?  
+7. What is the difference between Multi-AZ and Multi-Region?  
+8. Does deploying two EC2 instances in different AZs automatically guarantee high availability?  
+9. What factors should you consider when choosing an AWS Region?  
+10. Why can Multi-Region architecture be more expensive and complex?  
+
 </details>
 
-g# Summary
+# Summary
+
 <details>
+
 - **Region** — географическая область AWS, содержащая несколько AZ.  
 - **Availability Zone** — изолированная группа дата-центров внутри региона.  
 - **Edge Location** — точка присутствия для доставки контента и ускорения сетевых операций.  
@@ -208,4 +214,5 @@ g# Summary
 **AZ = как повышаем отказоустойчивость внутри региона.**
 
 **Edge Location = как доставляем контент ближе к пользователю.**
+
 </details>

@@ -35,7 +35,9 @@
 
 Важно: облако не означает, что физических серверов нет. Серверы существуют в дата-центрах поставщика, например Amazon.
 </details>
-# 3. Cloud Service Models (IaaS, PaaS,SaaS)
+
+## 3. Cloud Service Models (IaaS, PaaS,SaaS)
+
 <details>
 
 ### IaaS — Infrastructure as a Service
@@ -59,7 +61,9 @@
 `Примечание:` AWS предлагает сервисы с разными уровнями управления. Не каждый сервис AWS строго относится только к одной модели.
 
 </details>
-# 4. Cloud Deployment Models
+
+## 4. Cloud Deployment Models
+
 <details>
 
 - **Public Cloud:** инфраструктура предоставляется облачным провайдером многим клиентам. Пример — AWS.
